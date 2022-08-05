@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Salary Calculator </title>
+        <style> @import url(calculator.css); </style>
+        <script src="calcuator.js">  </script>
+    </head>
+
+    <body class="body">
+
+        <!-- HEADER -->
+        <div class="header">
+            <h1>Salary Calculator</h1>
+        </div>
+
+
+        <!-- INPUT FIELD WITH BUTTON -->
+        <div>
+            <p style="font-weight: bold;">Enter Gross Salary</p>
+        </div>
+     
+        <div>
+            <input type="text" class="amount" id="amount"> 
+            <button class="button" type="button" onclick="calculate()";> Calculate </button>
+       </div>
+       
+
+       <!-- RESULTS TABLE -->
+
+        <div>
+            <p style="font-weight: bold; font-size: 130%; margin-bottom: -2px;"> Result</p>        
+        </div>
+        
+
+
+        <div style="background: #549fd1; width: 100%; height: 10px; margin-bottom: 2px;"></div>
+        <div class="results">
+
+            <table class="table">
+
+                <tr>
+                    <td> </td>
+                    <td> EUR </td>
+                    <td> % </td>
+                </tr>
+
+                <tr style="background-color: #e0e0e0;">
+                    <td> Net Salary/Wage: </td>
+                    <td><p id="net"></p> </td>
+                    <td id="netPer"> 57.64 </td>
+                </tr>
+
+
+                <tr>
+                    <td> Funded pension (II pillar): </td>
+                    <td id="pension"> </td>
+                    <td id="pensionPer"> 1.49</td>
+                </tr>
+
+                <tr style="background-color: #e0e0e0;" >
+                    <td> Unemployment insurance(employee): </td>
+                    <td id="employee" type="text"> </td>
+                    <td id="insuranceEmpPer"> 1.20 </td>
+                </tr>
+
+                <tr>
+                    <td> Income tax: </td>
+                    <td id="income"> </td>
+                    <td id="incomePer"> 14.41 </td>
+                </tr>
+
+                <tr style="background-color: #e0e0e0;">
+                    <td> Gross Salary/Wage: </td>
+                    <td> <p id="total"></p></td>
+                    <td id="grossPer"> 74.74  </td>
+                </tr>
+
+                <tr>
+                    <td> Unemployment insurance (employer): </td>
+                    <td id="employer"> </td>
+                    <td id="insurancePer"> 0.60 </td>
+                </tr>
+
+                <tr style="background-color: #e0e0e0;">
+                    <td> Social tax: </td>
+                    <td id="social"> </td>
+                    <td id="taxPer"> 24.66</td>
+                </tr>
+
+
+                <tr >
+                    <td> Total Monthly Cost for Employer (Wage fund): </td>
+                    <td ><p id="total1"></p> </td>
+                    <td id="costPer"> 100 </td>
+                </tr>
+
+                <tr style="background-color: #e0e0e0;">
+                    <td> Total Yearly Cost for Employer (Wage fund): </td>
+                    <td ColSpan=2><p id="total2"></p></td>
+                </tr>
+
+            </table>
+        </div>
+
+    </body>
+
+
+</html>
