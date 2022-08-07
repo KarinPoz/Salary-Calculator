@@ -11,7 +11,7 @@ net salary/wage                         NET            net
 
 */
 
-// first  mistake was here - JS was working in console but not visible in Results Table at all.
+// first  mistake was here - JavaScript was working in console but not visible in Results Table at all.
 // SOLUtION: i had used .value to define value of "total"(Gross in Table), but after using .innerText it started working
 
 function calculate() {
